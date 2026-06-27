@@ -136,13 +136,13 @@ namespace Ch03
             // divides the number by2
 
 
-//             Code that implements bitwise operators can be difficult to read and
-// maintain. If you do implement these operators, the best practices listed
-// below should be observed:
-// Thoroughly document the sections of code that use bitwise operators.
-// Using self-describing names for constants.
-// Encapsulate complex bitwise code in methods (more on methods in
-// Chapter 5, Methods and Parameters). 
+                // Code that implements bitwise operators can be difficult to read and
+                // maintain. If you do implement these operators, the best practices listed
+                // below should be observed:
+                // Thoroughly document the sections of code that use bitwise operators.
+                // Using self-describing names for constants.
+                // Encapsulate complex bitwise code in methods (more on methods in
+                // Chapter 5, Methods and Parameters). 
 
 
             //Compound Assignment Operator 
@@ -185,12 +185,12 @@ namespace Ch03
             // make sure that they are type compatible during assignment, hence 
             // we used the explicit cast since we want to add and assign int to double
 
-//             Use compound assignment operators to improve code clarity.
-// Use compound assignment operators to reduce code repetition.
-// Be mindful of working with mixed data types and explicitly cast when
-// necessary.
-// Avoid excessive chaining of compound assignments because this can
-// make your code less readable
+            // Use compound assignment operators to improve code clarity.
+            // Use compound assignment operators to reduce code repetition.
+            // Be mindful of working with mixed data types and explicitly cast when
+            // necessary.
+            // Avoid excessive chaining of compound assignments because this can
+            // make your code less readable
 
             //Conditional Ternary Operator
             // allows us to write conditional logic on a single line of code. It is 
