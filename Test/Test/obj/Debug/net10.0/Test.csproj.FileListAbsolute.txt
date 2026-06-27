@@ -1,0 +1,15 @@
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\bin\Debug\net10.0\Test.exe
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\bin\Debug\net10.0\Test.deps.json
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\bin\Debug\net10.0\Test.runtimeconfig.json
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\bin\Debug\net10.0\Test.dll
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\bin\Debug\net10.0\Test.pdb
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\Test.AssemblyInfoInputs.cache
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\Test.AssemblyInfo.cs
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\Test.csproj.CoreCompileInputs.cache
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\Test.sourcelink.json
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\Test.dll
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\refint\Test.dll
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\Test.pdb
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\Test.genruntimeconfig.cache
+C:\Users\Farid\Desktop\C#\CH01\Test\Test\obj\Debug\net10.0\ref\Test.dll
