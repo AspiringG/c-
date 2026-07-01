@@ -29,20 +29,22 @@ namespace Loops
             
 
                                             // While Loop
-
-            // While loop is a condition based looping construct that continues to execute as long as
-            // the specified condition evaluates to true. This is a more flexible loop than the for loop,
-            // and it requires caution to avoid infinite loops.
+                // Explanation
+                    // While loop is a condition based looping construct that continues to execute as long as
+                    // the specified condition evaluates to true. This is a more flexible loop than the for loop,
+                    // and it requires caution to avoid infinite loops.
 
             // Infinite loop: A loop whose condition always evaluates to true, and there is no code that 
             // the loop to end
             
 
-            // Below Code continues to run until the condition balance > 0 is no longer
-            // evaluating to true. Balance is initially 1000. MonthlyWithdrawal is 100. 
+                // Code Explanation:
+                    // Below Code continues to run until the condition balance > 0 is no longer
+                    // evaluating to true. Balance is initially 1000. MonthlyWithdrawal is 100. 
 
-            // Expected outcome should be Funds depleted after 10 months. Where balance - withdrawAmount will repeat 10 times.
-            // Updating the months variable
+                // Expected outcome 
+                    // "Funds depleted after 10 months." -> Where balance - withdrawAmount will repeat 10 times.
+                    // Updating the months variable
 
             decimal balance = 1000.00m;
             decimal monthlyWithdrawal = 100.00m;
@@ -57,7 +59,24 @@ namespace Loops
             Console.WriteLine($"Funds depleted after {months} months.");
             
 
+                                    // Do-While Loops
 
+            // Explanation:
+                // Do-while differs from the while loop by guaranteeing at least one iteration.
+                // The guarantee is possible because the condition is evaluated after the loop executes.
+
+            // Code Example
+                // Could be implemeted to ensure the user is prompted at least once before checking for an exit condition.
+                
+                string input;
+                do 
+                {
+                    Console.WriteLine("Enter Transaction code (or 'exit' to quit): ");
+                    input = Console.ReadLine();
+                    // Process the transaction here 
+                }
+                while(input != "exit");
+                
         }
     }
 }
