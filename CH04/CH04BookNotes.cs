@@ -149,6 +149,104 @@ namespace CH04
                         Console.WriteLine("Unknown Transaction Type");
                         break;
                 }
+                transactionType = "WowCase";
+                switch (transactionType)
+                    {
+                        case "NewCase":
+                            Console.WriteLine("NewCase");
+                            break;
+                        case "WowCase":
+                            Console.WriteLine("WowCase");
+                            break;
+                        default:
+                            Console.WriteLine("Default");
+                    }
+
+
+                    // Switch statements and pattern matching.
+                    // Pattern matching enables switch statements to evaluate the value
+                    // of an object as well as its type and properties.
+
+                    // Following example assumes we need to calculate fees based on different types
+                    // of financial accounts, each represented by a class that derives from a base class
+
+                    // Account is set to a type using GetCustomerAccount() 
+                    // Implement pattern flow logic based on the case of the type.
+
+                    // Far more reliable than using if and else statements.
+                    
+
+                    Account account = GetCustomerAccount();
+                    switch(account)
+                    {
+                        case SavingsAccount savings when savings.Balance < 1000:
+                         Console.WriteLine("Low balance fee applied to savings account");
+                         break;
+                        case SavingsAccount:
+                         Console.WriteLine("No fee for savings account");
+                         break;
+                        case CheckingAccount checking when checking.isPremium:
+                         Console.WriteLine("No fee for premium checking account");
+                         break;
+                        case CheckingAccount:
+                         Console.WriteLine("Standard fee applied to checking account");
+                         break;
+                    }
+
+                    // PRO TIP use when clause to check another statement like if the account is premium or another 
+                    // condition is used.
+
+
+
+                                                // The Switch Expression
+                    // These allow us to write expressions that directly return a value.
+                    // Ideal to use in assignment statements and return statements. The following example modifies
+                    // our previous account fee.
+
+                    // So this switch does NOT execute code blocks like a normal switch. It directly returns a string value.
+                    // and stores that string value in a feeMessage
+
+                    string feeMessage = account switch
+                    {
+                        SavingsAccount savings when savings.Balance < 1000 => "Low balance fee applied to savings account",
+                            // If account is a CheckingAccount, temporarily call it checking, and check if checking.isPremium is true.
+                        SavingsAccout => "No fee for savings account",
+                        CheckingAccount checking when checking.isPremium => "No fee for premium checking account",
+                        CheckingAccount => "Standard fee applies to checking account",
+                        _ => "Account Type not recognized"
+                    };
+                    Console.WriteLine(feeMessage);
+
+
+                    if (x > 100 && (y < 50 || z == 0) && !isFlagged)
+                    {
+                        //assume logic is here
+                    }
+
+                    // How to refactor it?
+                    bool isHighValue = x > 100;
+                    bool isMediumValue = y < 50 || z == 0;
+                    bool isNotFlagged = !isFlagged;
+
+                    if (isHighValue && isMediumValue && isNotFlagged)
+                    {
+                        // Complex Logic
+                    }
+
+                    // Reduce Nesting
+                    // We can use guard clauses to return flow from a method when a condition is not met.
+
+                    if (user==null)
+                    {
+                        throw new ArgumentException(nameof(user));
+                    }
+                    if (!user.hasPermission("Withdraw")) 
+                    {
+                        Console.WriteLine("Access Denied.");
+                        return;
+                    }
+                    // Primary application logic starts here ...
+                    ProcessWithdrawal(user);
         }
     }
 }
