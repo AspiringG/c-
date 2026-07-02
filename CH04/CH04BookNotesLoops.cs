@@ -169,7 +169,56 @@ namespace Loops
                                 }
 
 
-                                
+
+                                                                // Breaking and Continuing 
+
+                            // Explanation
+                                // Sometimes we need to break out of loops early, hence we use C# provided control statements.
+                                // break and continue.
+
+                            
+                            // Break Statement
+                                // The break statement is used to immediately terminate a loop - no further processing occurs,
+                                // The loop terminates regardless of whether the loop's condition has been met.
+
+                            // Code example:
+                                // Code explanation:
+                                // List of transactions is stored in transactions var, isFlagged will be set to true in the foreach loop,
+                                // which gives reason to stop the current transactions from being executed,
+                                // thus we terminate the loop using break;
+
+                            List<decimal> transactions = new List<decimal> {125.00m, 9999.99m, 87.50m };
+                            bool isFlagged = false;
+
+                            foreach(decimal amount in transactions)
+                            {
+                                isFlagged = true;
+                                Console.WriteLine("Suspicious transaction detected. Account flagging");
+                                break;
+                            }
+
+                            // Continue Statement
+                                // skips the remaining code in the current iteration and then jumps directly to the next loop iteration.
+                                // This can be useful when certain values should be ignored or bypassed, and the overall loop proceed.
+
+                            // Code example:
+                                // Code explanation:
+                                // Let's consider a financial transaction batch process where some of the transactions have already been reconciled.
+                                // In this case the reconciled transactions should be skipped.
+
+                                // This helps us avoid unnecessary processing and keeps the loop structure focused on unreconsiled transactions
+
+                                bool isReconciled = true;
+                                foreach(decimal reconciled in transactions)
+                                {
+                                    if (reconciled.isReconciled)
+                                    {
+                                        continue;
+                                    }
+                                    ReviewTransaction(reconciled);
+                                }
+
+
         }
     }
 }
