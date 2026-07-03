@@ -218,6 +218,23 @@ namespace Loops
                                     ReviewTransaction(reconciled);
                                 }
 
+                                string isTrue = "true";
+
+                                switch (isTrue) 
+                                {
+                                    case "true": 
+                                        Console.WriteLine("true");
+                                        break;
+                                    case "False":
+                                        Console.WriteLine("Execute false logic");
+                                        break;
+                                    default:
+                                        Console.WriteLine("Default case");
+                                        break;
+                                }
+
+                                
+
 
         }
     }

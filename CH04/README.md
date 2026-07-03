@@ -7,4 +7,8 @@
  #### 2/7/2026
  * Completed Compound Loop Conditions
  * Completed Breaking and Continuing Sub-chapter
- * 
+ 
+ #### 3/7/2026
+ * Completed MC Questions
+ * Completed Exercises
+ * Completed Theoretical Questions
