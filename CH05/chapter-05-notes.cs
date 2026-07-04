@@ -91,6 +91,9 @@ namespace Chapter_5
 //                  {
 //                      number += 3.50; 
 //                  }
+
+                    newFunction(100, 90.12);
+                    newFunction(110.0, 13);
                     
         }
    
@@ -211,5 +214,28 @@ namespace Chapter_5
                 Console.WriteLine("Inside method " + number);
 
             }
+
+
+
+
+
+
+
+//                                                  Method Overloading
+
+//              Method Overloading happens when the same name for the method is used, with different amount of parameters or different types
+//              Example:
+                static void newFunction(double orderCost, int age)
+                {
+                    Console.WriteLine("newFunction#1");
+                }
+                static void newFunction(int age, double orderCost)
+                {
+                    Console.WriteLine("newFunction#2");
+                }
+                static void newFunction()
+                {
+                    Console.WriteLine("newFunction#2");
+                }
     }
 }
