@@ -237,5 +237,11 @@ namespace Chapter_5
                 {
                     Console.WriteLine("newFunction#2");
                 }
+
+
+
+//                                                 Modular design is an efficient way to structure modern software systems.
+//                              Each method should have a singular and clear task. When properly
+//                              implemented, the main method becomes a pseudo process flow method
     }
 }
