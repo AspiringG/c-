@@ -17,3 +17,11 @@
 * Completed Defining and Calling Methods
 * Completed Parameters and Return Types
 * Completed Pass by Value versus Pass by Reference
+* Completed Method Overloading
+* Completed Local Variables and Scope
+* Completed Organizing Code with Modular Design
+* Completed Best Practices for Method Naming
+
+Exercises: 
+
+* 
