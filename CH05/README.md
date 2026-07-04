@@ -11,4 +11,9 @@
 * Best Practices for Method Naming
 
 #### 7/3/2026
-* Completed
+* Organized Repo for chapter 5, introduction to the topic
+
+#### 7/4/2026
+* Completed Defining and Calling Methods
+* Completed Parameters and Return Types
+* Completed Pass by Value versus Pass by Reference
