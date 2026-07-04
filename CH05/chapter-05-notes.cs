@@ -241,7 +241,37 @@ namespace Chapter_5
 
 
 //                                                 Modular design is an efficient way to structure modern software systems.
+
 //                              Each method should have a singular and clear task. When properly
 //                              implemented, the main method becomes a pseudo process flow method
+
+
+
+//                                                  Use Action Verbs
+//                              Methods are how we program actions we want our software to perform.
+//                              Since methods do something, we should use action verbs in our naming
+//                              schema to clearly identify what the method is doing. Refer to Table 5.1 for
+//                              examples.
+//                              CalculateShipping()
+//                              ApplyDiscount()
+//                              PrintReceipt
+
+
+
+//                              Too vague: DoDiscount() HandleShipping()
+//                              
+//                              Too long: CalculateShippingFeeBasedOnDistanceAndDeliverySpeed()
+//                              Just right: DisplayOrderSummary()
+//                              GetRestockingFee()
+
+
+//                              Use PascalCase ExampleMethod. For variables use Camel case: exampleVariable;
+
+
+//                              If a method returns a value, we should name the method clearly and identify what it is.
+//                              GetShippingRate() method clearly would return a shipping rate based on any passed parameters, making it ideal method name
+//                              If it doesn't return a value, indicate exactly what it does, such as PrintInvoice().
+
+//                              Avoid shortforms and abbreviations
     }
 }
