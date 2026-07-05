@@ -1,4 +1,5 @@
 using System;
+using System.Net.WebSockets;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks.Dataflow;
 
@@ -98,7 +99,56 @@ namespace CH06Notes
                 Console.WriteLine();
             }
 
+            // Jagged Arrays
 
+            int[][] jagged = new int[3][];
+            jagged[0] = new int[2];
+            jagged[1] = new int[4];
+            jagged[2] = new int[3];
+
+            int[][] data = new int[][]
+            {
+                new int[] {1,2},
+                new int[] {13,4,5, 1},
+                new int[] {1,2,1},
+            };
+
+            int[][] kew = new int[][]
+            {
+                new int[] {1,2},
+                new int[] {2,3,1,3},
+                new int[] {2,3,1,3},
+            };
+            //      We check the row length in the inner loop since they are different in length and they are jagged arrays so
+            //      Use the data[row][col] instead of data[row, col].
+            for(int row = 0; row < data.Length; row++)
+            {
+                for(int col = 0; col < data[row].Length; col++)
+                {
+                    Console.Write(data[row][col] + " ");
+                }
+                Console.WriteLine();
+            }
+
+
+//                  Simple memory rule
+//      2D array:
+//      grid[row, col]
+//      grid.GetLength(0)
+//      grid.GetLength(1)
+
+//      Jagged array:
+//      data[row][col]
+//      data.Length
+//      data[row].Length
+
+//      Best way to remember:
+
+//      2D array = one rectangle
+//      Jagged array = rows are separate arrays
+        
+
+        
             }
         }
     }
