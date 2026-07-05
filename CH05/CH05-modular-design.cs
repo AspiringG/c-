@@ -39,7 +39,7 @@ namespace Modular
             Console.WriteLine("Discount: -$" + discount);
             Console.WriteLine("Total: $" + total);
         }
-
+        
         
     }
 }

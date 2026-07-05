@@ -22,6 +22,9 @@
 * Completed Organizing Code with Modular Design
 * Completed Best Practices for Method Naming
 
-Exercises: 
+#### 7/5/2026 
 
-* 
+Duration: 5 hours
+Exercises:
+
+* All Exercises Completed
