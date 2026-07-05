@@ -1,0 +1,30 @@
+## Chapter 5 Changelog
+
+### Plan
+* In this chapter, we will discuss the following topics:
+* Defining and Calling Methods
+* Parameters and Return Types
+* Pass by Value versus Pass by Reference
+* Method Overloading
+* Local Variables and Scope
+* Organizing Code with Modular Design
+* Best Practices for Method Naming
+
+#### 7/3/2026
+* Organized Repo for chapter 5, introduction to the topic
+
+#### 7/4/2026
+* Completed Defining and Calling Methods
+* Completed Parameters and Return Types
+* Completed Pass by Value versus Pass by Reference
+* Completed Method Overloading
+* Completed Local Variables and Scope
+* Completed Organizing Code with Modular Design
+* Completed Best Practices for Method Naming
+
+#### 7/5/2026 
+
+Duration: 5 hours
+Exercises:
+
+* All Exercises Completed
