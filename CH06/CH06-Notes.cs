@@ -148,7 +148,65 @@ namespace CH06Notes
 //      Jagged array = rows are separate arrays
         
 
-        
+        string[][] appointments = new string[7][];
+        appointments[0] = new string[] {"Dentist", "Gym"};
+        appointments[1] = new string[] { "Babysitter", "newProject", "MyPhoneFixer"};
+        appointments[2] = new string[] {"papa" , "University", "German", "pssss"};
+
+        for (int row = 0; row < appointments.Length; row++)
+            {   
+                if (appointments[row] == null) break;
+                for(int col = 0; col < appointments[row].Length; col++)
+                {
+                    Console.Write(appointments[row][col] + " ");
+                }
+                Console.WriteLine();
+            }
+
+
+
+//                                          Array Properties
+
+            int[,] gridsss = new int[3,4];
+            Console.WriteLine(gridsss.GetLength(0));
+            Console.WriteLine(gridsss.GetLength(1));
+
+//                                          Sorting Arrays
+
+//       To sort arrays in ascending order use: .Sort(array);
+            double[] numbers = {1, 2, 10, 8, 4, 99, 22, 3};
+            Array.Sort(numbers);
+            foreach(int num in numbers)
+            {
+                Console.Write(num + " ");
+            }
+            
+            int[] newNumbers = {1, 100, 32, 4, 23, 44, 11, 15, 1000};
+            Array.Sort(newNumbers);
+            foreach(int i in newNumbers)
+            {
+                Console.Write(i + " ");
+            }
+
+
+
+//                              Reversing arrays
+
+
+//          Sort reverserd using Array.Reverse() Method;
+
+            string[] namesames = new string[3] { "newnew", "papa", "bibi"};
+            namesames[0] = "Aaaa";
+            namesames[1] = "Bbbb";
+            namesames[2] = "Cccc";
+
+            Array.Reverse(namesames);
+            foreach(string name in namesames)
+            {
+                Console.WriteLine(name+ " ");
+            }
+
+
             }
         }
     }
