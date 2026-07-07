@@ -14,6 +14,11 @@ using System;
         {
             Console.WriteLine($"RV {VIN} engine started");
         }
+            public RV(string VIN, string EngineType)
+            {
+                this.VIN = VIN;
+                this.EngineType = EngineType;
+            }
 
 
         // Adding a Property Mileage,
@@ -31,7 +36,8 @@ using System;
                 }    
                 else 
                     throw new ArgumentException("Mileage cannot be negative");
-            }        
+            } 
+        }       
 
             public void Drive(double miles) 
             {
@@ -45,4 +51,12 @@ using System;
                     Console.WriteLine("Miles driven must be greater than zero");
                 }  
             }
+
+
+            public void PrintDetails()
+            {
+                Console.WriteLine($"RV Details - VIN: {this.VIN}, Engine: {this.EngineType}, Mileage: {this.Mileage}");
+                
+            }
+
     }
