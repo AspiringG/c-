@@ -43,7 +43,7 @@ using RVProject;
             
 //          Declaring and instantiate a ClassA RV
 
-            ClassA luxuryRV = new("lakwmdlakwd", "GAssy")
+            ClassA luxuryRV = new("lakwmdlakwd", "GAssy", true)
             {
                 VIN = "dhj1238h9-aghse",
                 EngineType = "Gasoline",
@@ -62,10 +62,9 @@ using RVProject;
             // myRV.StartEngine();
 //                  Creating Multiple Instances 
 
-        ClassA OLuxuryCar = new ClassA { VIN = "1231283712", EngineType = "Gas", HasLuxuryPackage = false};
-        ClassA rv1 = new ClassA
-        { VIN = "123123123", EngineType = "Diesel", HasLuxuryPackage = true};
-        ClassA rv2 = new ClassA { VIN = "123A49V1123", EngineType = "Diesel", HasLuxuryPackage = true};
+        ClassA OLuxuryCar = new ClassA("awd", "JetEngine", true) { VIN = "awd", EngineType = "JetEngine", HasLuxuryPackage = true};
+        ClassA rv1 = new ClassA("dad", "Diesel", false) { VIN = "dad", EngineType = "Diesel", HasLuxuryPackage = false};
+        ClassA rv2 = new ClassA("PPLA312", "Gas", true) { VIN = "PPLA312", EngineType = "Gas", HasLuxuryPackage = true};
         rv1.StartEngine();
         rv2.StartEngine();
         

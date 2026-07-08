@@ -7,7 +7,6 @@ using System;
         private double mileage;
         public required string VIN {get; set;}
         public required string EngineType {get; set;}
-
         // Behavior of every RV object. 
 
         public void StartEngine()

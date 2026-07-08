@@ -1,3 +1,5 @@
+using System.Transactions;
+
 namespace RVProject
 {
     /*
@@ -21,10 +23,13 @@ namespace RVProject
         public bool HasLuxuryPackage {get; set;}
         public bool hasAC {get; set;}
         private int carAge;
+        
 
-        public ClassA(string vin, string EngineType, bool hasLuxuryPackage) : base(vin, model)
+        public ClassA(string vin, string EngineType, bool hasLuxuryPackage) : base(vin, EngineType)
         {
             this.HasLuxuryPackage = hasLuxuryPackage;
+            this.VIN = vin;
+            this.EngineType = EngineType;
         }
 
         // Add a method
@@ -57,5 +62,6 @@ namespace RVProject
                 }
             }
         }
+
     }
 }
