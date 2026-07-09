@@ -1,7 +1,4 @@
 using System;
-
-namespace RV
-{
     public class RV
     {
         public required string VIN {get; set;}
@@ -11,4 +8,3 @@ namespace RV
             Console.WriteLine($"RV {VIN} engine started");
         }
     }
-}
