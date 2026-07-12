@@ -43,6 +43,32 @@ namespace CH09
                 example
 
             */
+
+            Console.WriteLine(RVHelper.hasEnoughFuel(23));
+            Console.WriteLine(RVHelper.hasEnoughFuel(0));
+
+            Student s1 = new Student();
+            s1.Name = "Ali";
+
+            Student s2 = new Student();
+            s2.Name = "Fuad";
+
+            Console.WriteLine(s1.Name);
+            Console.WriteLine(s2.Name);
+
+            Console.WriteLine(Student.SchoolName);
+
+            Console.WriteLine(Calculator.Add(2, 1));
+
+            Building a1 = new Building("A1", 13);
+            bool isAtDowntown = true;
+            a1.Cost = PermitCalculator.CalculatorPermitCost(a1.Floors, isAtDowntown);
+
+            Console.WriteLine(AppSettings.AppName);
+            Console.WriteLine(AppSettings.AppName);
+
+
+            Console.WriteLine(BuildingCode.PermitFeeBase);
         }
     }
 }

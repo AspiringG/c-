@@ -9,6 +9,21 @@ namespace CH09
         public int Floors;
         public string Address;
 
+        private decimal cost;
+
+        public decimal Cost
+        {
+            get { return this.cost;}
+            set
+            {
+                if (value > 0 && value <=10000000)
+                {
+                    this.cost = value;
+                }
+                else throw new ArgumentOutOfRangeException();
+            }
+        }
+
 
         // Master constructor with all the parameters
         public Building (string name, int floors, string address)
