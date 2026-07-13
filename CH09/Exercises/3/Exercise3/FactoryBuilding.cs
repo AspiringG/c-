@@ -1,4 +1,5 @@
 using System;
+using System.Buffers;
 using System.Globalization;
 using System.Text;
 
@@ -14,39 +15,37 @@ namespace Exercise
         
         public FactoryBuilding(string BuildingName, int BuildingFloors)
         {
-            if (MaximumFloors > BuildingFloors) {
-                throw new ArgumentOutOfRangeException("Too big");
-            }
-            totalPermitsIssues++;
-            Console.WriteLine($"TotalPermitsIssues: {totalPermitsIssues}");
             this.BuildingName = BuildingName;
             this.BuildingFloors = BuildingFloors;
+            totalPermitsIssues++;
         }
         public static int MaximumFloors
         {
             get => maximumFloor;
         }
 
-        // public static int TotalPermitsIssues
-        // {
-        //     get { return totalPermitsIssues;}
-        //     set
-        //     {
-        //         totalPermitsIssues = value;
-        //     }
-        // }
+        public static int TotalPermitsIssues
+        {
+            get { return totalPermitsIssues;}
+        }
 
         public int BuildingFloors
         {
             get {return buildingFloors;}
             set {
+                if (MaximumFloors < value)
+                {
+                throw new ArgumentOutOfRangeException("Too big");
+                }
+                if(value < 0) throw new ArgumentException("Value must be positive");
                 this.buildingFloors = value;
             }
         }
         public string BuildingName
         {
             get {return buildingName;}
-            set {
+            set 
+            {
                 this.buildingName = value;
             }
         }
