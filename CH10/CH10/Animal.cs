@@ -7,6 +7,11 @@ namespace CH10
         public virtual void Speak()
         {
             Console.WriteLine("It speaks");
+
+        }
+        public void show()
+        {
+            Console.WriteLine($"Displayed from Base Class");
         }
     }
 }

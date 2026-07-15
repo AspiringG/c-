@@ -13,6 +13,9 @@ namespace CH10
             Console.WriteLine("Barks");
         }   
 
+
+        // Implemented Method Hiding, here we havbe implemented method hiding, we changed the behavior of the base class without exposing it and calling it directly.
+
     }
 }
 
