@@ -13,7 +13,11 @@ namespace CH06Notes
             int[] jerseys;
             double[] grades;
             string[] names;
+            int[] student_age = new int[10];
 
+            student_age = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            string[] student_names = {"Farid", "Zeynab", "Husseyn", "Aftandil"};
+            for (int name = 0; name < student_names.Length(); name++) Console.WriteLine(student_names[0]);
             // How to init
 
             int[] scores = new int[5];
