@@ -5,10 +5,7 @@ using System.Runtime.InteropServices;
     
         static void Main(string[] args)
         {
-            ReadAndValidateIntValue();
-        }
-
-        public void ChooseConversion()
+        void ChooseConversion()
         {
             Console.WriteLine("Welcome to my Fahrenheit to Celcius or vice versa converter app.");
             Console.WriteLine("Please write the value type you want converted: \"F\" or \"C\"");
@@ -35,6 +32,9 @@ using System.Runtime.InteropServices;
                 }
             }
         }
+            ReadAndValidateIntValue();
+        }
+
 
         int ReadAndValidateIntValue()
         {
