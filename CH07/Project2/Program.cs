@@ -70,28 +70,53 @@ namespace CH07
         }
         static int DisplayMenu()
         {
-            Console.WriteLine("Choose: \n 1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division \n 5.Exit");
-            string? input = Console.ReadLine();
-                if (int.TryParse(input, out int choice))
+            while(true)
+            {
+                Console.WriteLine("Choose: \n 1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division \n 5.Exit");
+                string? input = Console.ReadLine();
+
+                if(string.IsNullOrEmpty(input))
                 {
-                    return choice;
+                    Console.WriteLine("Input cannot be empty");
+                    continue;
                 }
-                else return -1;
+                if (!int.TryParse(input, out int choice))
+                {
+                    Console.WriteLine("Enter a value between 1-4");
+                    continue;
+                }
+                if(choice < 0 || choice > 4)
+                {
+                    Console.WriteLine("Enter a value between 1 and 4");
+                    continue;
+                }
+                
+                return choice;
+            }
         }
 
         static double GetNumberInput(string prompt)
         {
-            Console.WriteLine(prompt);
-            string? input = Console.ReadLine();
-            double number;
-
-            while(!double.TryParse(input, out number))
+            while(true)
             {
-                Console.WriteLine("Invalid Input, Please enter a valid numeric number");
-                input = Console.ReadLine();
-            }
+                Console.WriteLine(prompt);
+                string? input = Console.ReadLine();
+                double number;
 
-            return number;
+                if(string.IsNullOrEmpty(input))
+                {
+                    Console.WriteLine("Input cannot be empry");
+                    continue;
+                }
+
+                if(!double.TryParse(input, out double amount))
+                {
+                    Console.WriteLine("Input should be of type double");
+                    continue;
+                }
+
+                return amount;
+            }
         }
 
         static double Add(double a, double b)
