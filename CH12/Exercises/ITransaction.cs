@@ -1,6 +1,6 @@
 using System;
 
-namespace Exercise
+namespace Exercises
 {
     public interface ITransaction
         {

@@ -1,7 +1,8 @@
 using System;
 
-
-    public class DepsitTransaction
+namespace Exercises
+{
+    public class DepositTransaction : ITransaction
     {
         public decimal Amount {get; set;}
         public decimal Balance {get; set;}
@@ -16,3 +17,5 @@ using System;
             Console.WriteLine($"Receipt amount generated");
         }
     }
+    
+}
