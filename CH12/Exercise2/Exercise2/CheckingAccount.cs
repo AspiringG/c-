@@ -7,7 +7,7 @@ namespace Exercise2
     {
         public override decimal CalculateInterest()
         {
-            return Balance * (decimal)0.02;
+            return Balance * 0.02m;
         }
     }
 }
