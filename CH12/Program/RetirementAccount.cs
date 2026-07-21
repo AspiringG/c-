@@ -5,7 +5,7 @@ namespace CH12
 
     public abstract class InvestmentAccount
     {
-        public string AccountNumber {get; set;}
+        public string AccountNumber {get; set;} 
         public string Owner {get; set;}
 
         // Abstract method must be implemented by sub classes

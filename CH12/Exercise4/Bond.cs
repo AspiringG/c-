@@ -2,12 +2,8 @@ using System;
 
 namespace Exercise4
 {
-    public class Bond : IExportable, IAuditable, IReturnable, IReportable
+    public class Bond :IAuditable, IReturnable, IReportable
     {
-        public void ExportData()
-        {
-            Console.WriteLine("ExportData");
-        }
         public void CalculateReturn()
         {
             Console.WriteLine("Calculate the returns");
