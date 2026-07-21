@@ -8,6 +8,9 @@ namespace Exercise3
     {
         public static void Main(string[] args)
         {
+            AuditService au = new AuditService();
+            ReportService rs = new ReportService();
+            InvestmenService Is = new InvestmenService();
 
             MutualFund fund1 = new MutualFund();
             MutualFund fund2 = new MutualFund();
@@ -25,8 +28,9 @@ namespace Exercise3
                 mutualFund.PerformAudit();
             }
 
-            fund1.CalculateReturn();
-            
+            au.Audit(fund1);
+            au.Audit(fund2);
+            Is.Generate(fund3);
         }
     }    
 }
